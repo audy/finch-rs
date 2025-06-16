@@ -9,7 +9,8 @@ classifier = [
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Topic :: Scientific/Engineering :: Bio-Informatics"
-]dynamic = ["version"]
+]
+dynamic = ["version"]
 readme = "README.md"
 
 [tool.maturin]
