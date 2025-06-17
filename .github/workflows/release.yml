@@ -4,18 +4,11 @@
 #    maturin generate-ci github
 #
 name: build wheels
-
 on:
   push:
     branches:
-      - main
       - master
-    tags:
-      - "*"
   pull_request:
-  workflow_dispatch:
-  release:
-    types: [published]
 
 jobs:
   linux:
