@@ -97,7 +97,7 @@ pub fn raw_distance(
     // at this point we've exhausted one of the two sketches, but we may have
     // more counts in the other to compare if these were scaled sketches
     if scale > 0. {
-        let max_hash = u64::max_value() / scale.recip() as u64;
+        let max_hash = u64::MAX / scale.recip() as u64;
         while query_hashes
             .get(i)
             .map(|kmer_count| kmer_count.hash < max_hash)
